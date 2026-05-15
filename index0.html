@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Menu Coffee Shop</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f5f5;
+      padding: 30px;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 42px;
+      margin-bottom: 10px;
+      color: #4b2e2e;
+    }
+
+    .subtitle {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #777;
+      letter-spacing: 2px;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .menu-section {
+      background: #fafafa;
+      padding: 25px;
+      border-radius: 12px;
+      border: 1px solid #ddd;
+    }
+
+    .menu-section h2 {
+      margin-bottom: 20px;
+      color: #6b3e26;
+      border-bottom: 2px solid #6b3e26;
+      padding-bottom: 8px;
+      text-transform: uppercase;
+      font-size: 22px;
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+      border-bottom: 1px dashed #ccc;
+    }
+
+    .menu-item:last-child {
+      border-bottom: none;
+    }
+
+    .item-name {
+      font-weight: bold;
+      margin-bottom: 3px;
+    }
+
+    .item-desc {
+      font-size: 13px;
+      color: #666;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #222;
+      margin-left: 10px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #777;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>OUR MENU</h1>
+    <p class="subtitle">Coffee, Non Coffee, Mocktail & Food</p>
+
+    <div class="menu-grid">
+
+      <!-- BASIC COFFEE -->
+      <div class="menu-section">
+        <h2>Basic Coffee</h2>
+
+        <div class="menu-item">
+          <div>
+            <div class="item-name">Americano</div>
+          </div>
+          <div class="price">20K</div>
+        </div>
+
+        <div class="menu-item">
+          <div>
+            <div class="item-name">Flavor Black</div>
+            <div class="item-desc">Jamaican Rum / Hazelnut / Peach / Lychee</div>
+          </div>
+          <div class="price">23K</div>
+        </div>
+
+        <div class="menu-item">
+          <div>
+            <div class="item-name">Flavor White</div>
+            <div class="item-desc">Jamaican Rum / Hazelnut / Caramel / Vanilla</div>
+          </div>
+          <div class="price">27K</div>
+        </div>
+
+        <div class="menu-item">
+          <div>
+            <div class="item-name">White</div>
+            <div class="item-desc">Cappuccino / Coffee Latte / Piccolo</div>
+          </div>
+          <div class="price">25K</div>
+        </div>
+
+        <div class="menu-item">
+          <div>
+            <div class="item-name">Manual Brew</div>
+            <div class="item-desc">Please ask our team for single origin available</div>
+          </div>
+          <div class="price">25K</div>
+        </div>
+
+        <div class="menu-item">
+          <div>
+            <div class="item-name">Andalan</div>
+            <div class="item-desc">Es Kopi Banua (Medium)</div>
+          </div>
+          <div class="price">25K</div>
+        </div>
+
+        <div class="menu-item">
+          <div>
+            <div class="item-name">Es Kopi Banua (Large)</div>
+          </div>
+          <div class="price">28K</div>
+        </div>
+
+        <div class="menu-item">
+          <div>
+            <div class="item-name">Baby Step</div>
+          </div>
+          <div class="price">27K</div>
+        </div>
+
+        <div class="menu-item">
+          <div>
+            <div class="item-name">Signature</div>
+            <div class="item-desc">Kopisu Cereal / Bahagia / Semangat Before Sunset / Vanilla Latte</div>
+          </div>
+          <div class="price">32K</div>
+        </div>
+
+        <div class="menu-item">
+          <div>
+            <div class="item-name">Dessert</div>
+            <div class="item-desc">Affogato / Chocogato / Matchagato</div>
+          </div>
+          <div class="price">20K</div>
+        </div>
+      </div>
+
+      <!-- NON COFFEE -->
+      <div class="menu-section">
+        <h2>Non Coffee</h2>
+
+        <div class="menu-item">
+          <div>
+            <div class="item-name">Lemon Tea / Lychee Tea</div>
+          </div>
+          <div class="price">22K</div>
+        </div>
+
+        <div class="menu-item">
+          <div>
+            <div class="item-name">Peach Tea / Lychee Tea</div>
+          </div>
+          <div class="price">25K</div>
+        </div>
+
+        <div class="menu-item">
+          <div>
+            <div class="item-name">Flavor Chocolate</div>
+            <div class="item-desc">Jamaican Rum / Vanilla / Caramel / Hazelnut</div>
+          </div>
+          <div class="price">28K</div>
+        </div>
+
+        <div class="menu-item">
+          <div>
+            <div class="item-name">Dark Chocolate</div>
+          </div>
+          <div class="price">27K</div>
+        </div>
+
+        <div class="menu-item">
+          <div>
+            <div class="item-name">Matcha</div>
+          </div>
+          <div class="price">25K</div>
+        </div>
+
+        <div class="menu-item">
+          <div>
+            <div class="item-name">Taro</div>
+          </div>
+          <div class="price">25K</div>
+        </div>
+
+        <div class="menu-item">
+          <div>
+            <div class="item-name">Air Mineral</div>
+          </div>
+          <div class="price">5K</div>
+        </div>
+      </div>
+
+      <!-- FOOD -->
+      <div class="menu-section">
+        <h2>Food</h2>
+
+        <div class="menu-item">
+          <div class="item-name">Cheezy Fries</div>
+          <div class="price">27K</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Dimsum</div>
+          <div class="price">17K</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Kentang Goreng</div>
+          <div class="price">22K</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Pisang Goreng Banua</div>
+          <div class="price">20K</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Indomie Telur</div>
+          <div class="price">20K</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Indomie Goreng / Kuah</div>
+          <div class="price">15K</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Nasi Goreng</div>
+          <div class="price">27K</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Nasi Ayam Palekko</div>
+          <div class="price">27K</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Nasi Ayam Goreng Kecap</div>
+          <div class="price">27K</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Nasi Tuna Suir</div>
+          <div class="price">27K</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Nasi Paru Rica</div>
+          <div class="price">27K</div>
+        </div>
+      </div>
+
+      <!-- MIXOLOGY -->
+      <div class="menu-section">
+        <h2>Mixology</h2>
+
+        <div class="menu-item">
+          <div class="item-name">Sunset Citrus</div>
+          <div class="price">27K</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Tropical Fizz</div>
+          <div class="price">27K</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Joseph Cuervo</div>
+          <div class="price">32K</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Sahara Oasis</div>
+          <div class="price">27K</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Bloom Smith</div>
+          <div class="price">27K</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Happy Mint</div>
+          <div class="price">27K</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Summer Bottom</div>
+          <div class="price">27K</div>
+        </div>
+      </div>
+
+      <!-- DRINK BY OM BEN -->
+      <div class="menu-section">
+        <h2>Drink by Om Ben</h2>
+
+        <div class="menu-item">
+          <div>
+            <div class="item-name">Tradisional Coffee</div>
+            <div class="item-desc">Vietnam Drip / Kopi Klotok</div>
+          </div>
+          <div class="price">19K</div>
+        </div>
+
+        <div class="menu-item">
+          <div>
+            <div class="item-name">Kopi Mililiter</div>
+            <div class="item-desc">Berdika Kelipatan / 50 ml</div>
+          </div>
+          <div class="price">7K</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Es Kopi Keponakan</div>
+          <div class="price">25K</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Es Tjoklat Lorenk</div>
+          <div class="price">22K</div>
+        </div>
+      </div>
+
+    </div>
+
+    <footer>
+      © 2026 Coffee Shop Menu | Designed with HTML & CSS
+    </footer>
+  </div>
+</body>
+</html>
